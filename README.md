@@ -124,152 +124,144 @@ export const firebaseConfig = {
 
 Use the following structure to set up your Firestore database collections and documents.
 
-#### Admin Collection
-
+### Admin Collection
 ```json
 {
   "email": "admin@example.com",
-  "password": "123456"
+  "password": "password123"
 }
 ```
 
-#### AgeRecords Collection
-
+### AgeRecords Collection
 ```json
 {
   "data": {
     "students": [
       {
-        "age": "14 years 4 months",
-        "fatherName": "Richard Doe",
-        "name": "John Doe",
-        "registrationNumber": 101,
-        "totalBoys": 30,
-        "totalGirls": 25
+        "age": "age_placeholder",
+        "fatherName": "father_name_placeholder",
+        "name": "student_name_placeholder",
+        "registrationNumber": registration_number_placeholder,
+        "totalBoys": total_boys_placeholder,
+        "totalGirls": total_girls_placeholder
       }
     ],
-    "generatedAt": "2024-05-20T10:00:00Z",
-    "reportId": "report1",
-    "reportType": "Student Age Record"
+    "generatedAt": "timestamp_placeholder",
+    "reportId": "report_id_placeholder",
+    "reportType": "report_type_placeholder"
   }
 }
 ```
 
-#### Students Collection
-
+### Students Collection
 ```json
 {
-  "admissionClass": "class2",
-  "classId": "class2",
-  "dateOfAdmission": "April 2, 2024 at 3:47:00 PM UTC+5",
-  "dateOfBirth": "March 22, 2024 at 3:47:00 PM UTC+5",
-  "docId": "0Lne2XesSPfOf73oooO2",
-  "email": "umer@gmail.com",
+  "admissionClass": "admission_class_placeholder",
+  "classId": "class_id_placeholder",
+  "dateOfAdmission": "date_of_admission_placeholder",
+  "dateOfBirth": "date_of_birth_placeholder",
+  "docId": "document_id_placeholder",
+  "email": "student_email_placeholder",
   "fatherDetails": {
-    "caste": "Raan",
-    "fatherName": "Hamza Malik",
-    "occupation": "Doctor",
-    "residence": "I8"
+    "caste": "caste_placeholder",
+    "fatherName": "father_name_placeholder",
+    "occupation": "occupation_placeholder",
+    "residence": "residence_placeholder"
   },
-  "gender": "male",
-  "name": "Umer",
-  "password": "12345678",
-  "registrationNumber": 3,
-  "remarks": ""
+  "gender": "gender_placeholder",
+  "name": "student_name_placeholder",
+  "password": "password_placeholder",
+  "registrationNumber": registration_number_placeholder,
+  "remarks": "remarks_placeholder"
 }
 ```
 
-#### Classes Collection
-
+### Classes Collection
 ```json
 {
-  "classId": "123",
-  "className": "xyz",
-  "subjects": ["English",  "Math", "Science"],
-  "syllabus": "https://example.com/syllabus/nursery.png",
-  "timetable": "https://example.com/timetable/nursery.png"
+  "classId": "class_id_placeholder",
+  "className": "class_name_placeholder",
+  "subjects": ["subject1_placeholder", "subject2_placeholder", "subject3_placeholder"],
+  "syllabus": "syllabus_url_placeholder",
+  "timetable": "timetable_url_placeholder"
 }
 ```
 
-#### FeeStatus Collection
-
+### FeeStatus Collection
 ```json
 {
-  "amountDue": 2500,
-  "amountPaid": 500,
-  "lateFees": false,
-  "payableAmount": 2000,
-  "paymentDate": "2024-05-27",
-  "registrationNumber": 3,
-  "remarks": "Late fee",
-  "studentName": "Jhon doe"
+  "amountDue": amount_due_placeholder,
+  "amountPaid": amount_paid_placeholder,
+  "lateFees": late_fees_placeholder,
+  "payableAmount": payable_amount_placeholder,
+  "paymentDate": "payment_date_placeholder",
+  "registrationNumber": registration_number_placeholder,
+  "remarks": "remarks_placeholder",
+  "studentName": "student_name_placeholder"
 }
 ```
 
-#### Marks Collection
+### Marks Collection
 ```json
 {
-  "classId": "class1",
-  "marksObtained": "47",
-  "registrationNumber": "3",
-  "subjectName": "English",
-  "term": "final"
+  "classId": "class_id_placeholder",
+  "marksObtained": "marks_obtained_placeholder",
+  "registrationNumber": "registration_number_placeholder",
+  "subjectName": "subject_name_placeholder",
+  "term": "term_placeholder"
 }
 ```
 
-#### ResultReports Collection
-
+### ResultReports Collection
 ```json
 {
   "data": {
     "classResults": [
       {
-        "className": "8",
+        "className": "class_name_placeholder",
         "students": [
           {
             "marks": {
-              "Math": {
-                "Final Term": 90,
-                "First Term": 85,
-                "Mid Term": 88
+              "Subject1": {
+                "Final Term": final_term_marks_placeholder,
+                "First Term": first_term_marks_placeholder,
+                "Mid Term": mid_term_marks_placeholder
               },
-              "Science": {
-                "Final Term": 85,
-                "First Term": 78,
-                "Mid Term": 82
+              "Subject2": {
+                "Final Term": final_term_marks_placeholder,
+                "First Term": first_term_marks_placeholder,
+                "Mid Term": mid_term_marks_placeholder
               }
             },
-            "name": "John Doe",
-            "registrationNumber": 101
+            "name": "student_name_placeholder",
+            "registrationNumber": registration_number_placeholder
           }
         ]
       }
     ],
-    "generatedAt": "timestapm",
-    "reportId": "report2",
-    "reportType": "Result Sheet"
+    "generatedAt": "timestamp_placeholder",
+    "reportId": "report_id_placeholder",
+    "reportType": "report_type_placeholder"
   }
 }
 ```
 
-#### Teachers Collection
-
+### Teachers Collection
 ```json
 {
-  "assignedclass": "class1",
-  "email": "teacher@gmail.com",
-  "name": "name",
-  "password": "hashedPassword",
-  "teacherId": "T123"
+  "assignedclass": "assigned_class_placeholder",
+  "email": "teacher_email_placeholder",
+  "name": "teacher_name_placeholder",
+  "password": "hashed_password_placeholder",
+  "teacherId": "teacher_id_placeholder"
 }
 ```
 
-#### Users Collection
-
+### Users Collection
 ```json
 {
-  "email": "teacher@gmail.com",
-  "role": "teacher"
+  "email": "user_email_placeholder",
+  "role": "user_role_placeholder"
 }
 ```
 
