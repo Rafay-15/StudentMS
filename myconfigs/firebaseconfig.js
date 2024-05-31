@@ -1,8 +1,6 @@
-// config/firebaseConfig.js
 import firebase from '@react-native-firebase/app';
 import '@react-native-firebase/firestore';
 
-// Replace the placeholders with your actual Firebase project details
 const firebaseConfig = {
     "project_info": {
       "project_number": "229298467394",
