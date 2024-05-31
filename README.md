@@ -171,7 +171,7 @@ Use the following structure to set up your Firestore database collections and do
   "gender": "gender_placeholder",
   "name": "student_name_placeholder",
   "password": "password_placeholder",
-  "registrationNumber": registration_number_placeholder,
+  "registrationNumber": registration_number_placeholder ,
   "remarks": "remarks_placeholder"
 }
 ```
