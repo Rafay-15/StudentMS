@@ -75,3 +75,4 @@ yarn-error.log
 build.gradle
 # Ignore Firebase config file
 myconfigs/firebaseConfig.js
+myconfigs\firebaseconfig.js
