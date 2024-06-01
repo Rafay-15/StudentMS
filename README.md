@@ -119,6 +119,60 @@ export const firebaseConfig = {
   appId: "YOUR_APP_ID",
 };
 ```
+## Setting Up `google-services.json`
+
+To configure your Firebase project in your React Native application, you need to add a `google-services.json` file to your project. This file contains essential information and credentials for Firebase services.
+
+### Steps to Create `google-services.json`
+
+1. **Log in to Firebase Console**:
+   - Go to the [Firebase Console](https://console.firebase.google.com/).
+   - Click on your project or create a new project if you haven't already.
+
+2. **Add an Android App**:
+   - In the Firebase Console, click on the gear icon next to "Project Overview" and select "Project settings".
+   - Under "Your apps", click on the Android icon to add a new Android app.
+   - Register your app with your Android package name (e.g., `com.yourappname`).
+   - Follow the steps to download the `google-services.json` file.
+
+3. **Place `google-services.json` in Your Project**:
+   - Move the downloaded `google-services.json` file to the `android/app/` directory of your React Native project.
+
+### Example `google-services.json` Structure with Dummy Data
+
+Below is an example of how the `google-services.json` file should look. Replace the values with the actual data from your Firebase project.
+
+```json
+{
+  "project_info": {
+    "project_number": "123456789012",
+    "project_id": "your-project-id",
+    "storage_bucket": "your-project-id.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "your_app_id",
+        "android_client_info": {
+          "package_name": "com.yourappname"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "YOUR_API_KEY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
+
 
 ### 4. Database Schema
 
