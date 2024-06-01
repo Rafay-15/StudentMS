@@ -33,6 +33,7 @@ local.properties
 .cxx/
 *.keystore
 !debug.keystore
+app/google-services.json
 
 # node.js
 #
@@ -79,5 +80,4 @@ package-lock.json
 build.gradle
 # Ignore Firebase config file
 myconfigs/firebaseConfig.js
-# myconfigs\firebaseconfig.js
 
